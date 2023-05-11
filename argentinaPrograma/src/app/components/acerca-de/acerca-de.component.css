@@ -5,9 +5,9 @@ div{
     background-color: #a1b5cb;
     text-align: center;
 }
-h1{
+h2{
     font-weight: bold;
-    margin-top: 30%;
+    margin-top: 20%;
 }
 
 @media (min-width: 576px) {
@@ -17,7 +17,7 @@ h1{
         border-radius: 100%;
         box-shadow: 3PX 3PX 3PX grey;
         left: 3%;
-        top: 600px;
+        top: 500px;
     }
     
 }
@@ -29,7 +29,7 @@ h1{
         border-radius: 100%;
         box-shadow: 3PX 3PX 3PX grey;
         left: 33%;
-        top: 630px;
+        top: 530px;
     }
     
 }
