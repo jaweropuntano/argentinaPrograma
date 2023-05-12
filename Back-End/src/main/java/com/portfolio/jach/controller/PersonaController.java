@@ -12,8 +12,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.portfolio.jach.entidad.DatosRegistroPersona;
 import com.portfolio.jach.entidad.Persona;
 import com.portfolio.jach.interfaces.PersonaService;
+
+import jakarta.validation.Valid;
 
 @RestController
 
@@ -25,9 +28,8 @@ public class PersonaController {
 		return personaService.getPersona();
 	}
 	@PostMapping("/personas/crear")
-	public String createPersona(@RequestBody Persona persona) {
-		personaService.savePersona(persona);
-		return "La persona se creo correctamente";
+	public void createPersona(@RequestBody @Valid DatosRegistroPersona datosRegistroPersona) {
+		personaService.savePersona(new Persona(datosRegistroPersona));
 	}
 	
 	@DeleteMapping("/personas/borrar/{id}")
@@ -48,10 +50,7 @@ public class PersonaController {
 		persona.setImg(nuevoImg);
 		
 		personaService.savePersona(persona);
-		return persona;
-		
-	}
-	
-	
+		return persona;		
+		}	
 	}
 
