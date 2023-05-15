@@ -12,6 +12,13 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import { SoftkillComponent } from './components/softkill/softkill.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { HomeComponent } from './components/home/home.component';
+import { LoginComponent } from './components/login/login.component';
+import { AppRoutingModule } from './app-routing.module';
+import { RouterModule } from '@angular/router';
+import { ContactoComponent } from './components/contacto/contacto.component';
 
 @NgModule({
   declarations: [
@@ -24,11 +31,18 @@ import { FooterComponent } from './components/footer/footer.component';
     EducacionComponent,
     SoftkillComponent,
     ProyectosComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent,
+    LoginComponent,
+    ContactoComponent    
   ],
   imports: [
     BrowserModule,
-    NgCircleProgressModule.forRoot({})
+    AppRoutingModule,
+    FormsModule,
+    NgCircleProgressModule.forRoot({}),
+    HttpClientModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

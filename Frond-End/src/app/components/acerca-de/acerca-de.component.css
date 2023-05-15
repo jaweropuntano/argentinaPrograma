@@ -1,14 +1,55 @@
-.row{
-    padding: 20px;
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
 }
+
 div{
     background-color: #a1b5cb;
     text-align: center;
 }
-h2{
-    font-weight: bold;
-    margin-top: 20%;
+
+.presentacion .bienvenida{
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
 }
+.presentacion h2{
+    font-size: 55px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.presentacion h2 span{
+    font-size: 25px;
+    color: #200694;
+}
+.presentacion .descripcion{
+    max-width: 700px;
+    margin: 25px auto;
+    font-size: 18px;
+    text-align: center;
+}
+.presentacion a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 25px;
+    padding: 20px 25px;
+    border: 2px solid #4209c7;
+    border-radius: 50px;
+    color: #044858;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .5s;
+}
+.presentacion a:hover{
+    background-color: #9209d1;
+}
+
+
 
 @media (min-width: 576px) {
     #fotoperfil{

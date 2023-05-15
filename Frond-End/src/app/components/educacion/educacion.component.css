@@ -1,9 +1,65 @@
-.row{
-    padding: 20px;
-}
-div{
+
+#trabajos{
+    padding: 100px 15px;
+    text-align: center;
     background: #a1b5cb;
 }
-h1,h3{
-    display: inline;
+#trabajos .titulo-seccion{
+    font-size: 22px;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: aliceblue;
+    text-decoration-thickness: 5px;
+}
+
+#trabajos .fila{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+#trabajos .fila .trabajo{
+    max-width: 350px;
+    background-color: #06869c;
+    padding: 30px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: .5s;
+}
+#trabajos .fila .trabajo:hover{
+    box-shadow: 5px 5px 10px #565656;
+}
+#oracle{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+#arge{
+    width: 100%;
+}
+#trabajos .fila .trabajo .icono img #arge{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    background-color: white;
+    padding: 40px;
+    margin-bottom: 25px;
+}
+#trabajos .fila .trabajo hr{
+    width: 30px;
+    margin: auto;
+    color: #000;
+    margin-bottom: 25px;
+}
+#trabajos .fila .trabajo ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+#trabajos .fila .trabajo p{
+    font-size: 14px;
+    line-height: 22px;
 }

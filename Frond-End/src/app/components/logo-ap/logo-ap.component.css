@@ -3,18 +3,79 @@
     justify-content: space-between;
     align-items: center;
 }
-.redes{
-    margin-right: 0.5em;
-}
+
 #logoAP{
-    width: 150px;
+    width: 110px;
+    height: 10%;
+    right: 80%;
+    margin-right: -50%;
 }
 img{
-    width: 50px;
+    width: 30px;
 }
 .btn{
     border-width: medium;
 }
+
+#icono-nav{
+    color: #fff;
+    display: none;
+
+}
+#inicio{
+    background: linear-gradient(rgba(15, 158, 34, 0.7), rgba(4, 92, 104, 0.7));
+    background-size: cover;
+    background-position: center center;
+    height: 20vh;
+}
+#inicio .contenido header{
+    background-color: rgb(10, 88, 112);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+}
+#inicio .contenido header .contenido-header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+#inicio .contenido header .contenido-header h1{
+    text-align: center;
+    color: brown;
+}
+#inicio .contenido header .contenido-header nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+#inicio .contenido header .contenido-header nav ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    margin: 0 12px;
+    font-weight: 400;
+    transition: .5s;
+}
+#inicio .contenido header .contenido-header nav ul a:hover{
+    color: rgb(153, 6, 30);
+}
+
+
+#inicio .contenido .presentacion{
+    max-width: 1100px;
+    height: 100vh;
+    margin: auto;
+    columns: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
 
 
 @media(max-width:575px){

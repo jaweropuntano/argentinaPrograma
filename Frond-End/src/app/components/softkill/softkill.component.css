@@ -2,3 +2,12 @@
     background-color: #a1b5cb;
     padding: 20px;
 }
+#titulo{
+    font-size: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: aliceblue;
+    text-decoration-thickness: 5px;
+}

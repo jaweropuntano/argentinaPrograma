@@ -82,10 +82,6 @@ public class Persona {
 		return img;
 	}
 	
-	
-
-
-	
-	}
+}
 
 
